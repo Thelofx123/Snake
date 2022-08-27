@@ -1,9 +1,7 @@
 import * as React from 'react';
 import '../App.css';
-import {
-  Link
-} from "react-router-dom";
-
+import {Link} from "react-router-dom";
+import lbh from "../img/lbh.png"
 
 
 const Navbar = () => {
@@ -12,16 +10,35 @@ const Navbar = () => {
   
     <div className='navbar'> 
     <div className='half'>
-    <img className='zurag2' src='https://s3-alpha-sig.figma.com/img/b34d/440b/072b8596b13f7fa0659fe499725cf4a3?Expires=1661731200&Signature=AQAfjxWqJ~KjsQNBRDJSWIvJFituOyWPbXIPCoAX8I0VUQIgeYqDE~8SOFo2KOMbhN2UALiEDnpwU83TqZYHnxMB3tuuCsh0Cm-eaGBbZ8zqkBNtOkfdd0fOr7Zwl23gRiBC1BSdiFXu70i8OBpXOBes3h1Gbm1GeDpqG66BTjgYb6NnUosRAVLLYJH1qOjZVW6-p4q8kGkCkwcz4biBBoCspykpBYvVoRMPL9bbLxhEp6DU~Uk-6PFPJ4gtGvspoQs4VEfOEPCOeEjcwkliiDAMPK89JxkiR08riyKBQq4boAvSBtnoGjGvo8jMsw3M8OZOCDghWcYj3irqG9AtLQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'/>
+      <div className='secondHalf'>
+      <Link to="/about">
+      <img className='zurag2' src="https://s3-alpha-sig.figma.com/img/100c/1d94/facd476ef9274493d9b72940a38f21dd?Expires=1662336000&Signature=CVCHT7ELaWHC2vLDUqSKTB3aLoMrxArKMy59fLztkNGQQxWcbuZ4IZOt9vPT5UQmz8Et3w8Cc9qjogBRSmM3glzmIYNSIKYUd~FRmlNeaBeh0O-h2TcLchcL~cG3m0v0tivVOvl93VeuK2Ys76ECAtfRsQ7Zkqvc0dKBuChUZPIgMTgrM9M65397dq~qREy43J6LVy1Wl8rmiK26BzAer6g0EcUu7B0W~sYnjheNxDSsffuDW-1tQjV729iKRfc0urloyrxeYz8~LiX1A-DBhJYXADDittwdo1vFHeCKv1Jbi1XPP0nsOEkCDL625Vtm8Cc38M7ybf7Xl8QYwVnN0w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"/>
+      </Link>
+          
+              {/* <div className='subSecondHalf'>
+              <p className='nameTop'>LBH</p>
+              <p className='logoName'>EXCELLENT PERFORMANCE</p>
+              </div> */}
+
+      </div>
+  
+    
         <div className='yum2'>
-          <li><Link to="/about">Нүүр</Link></li>
-          <li><Link to="/soon">Бидний тухай</Link></li>
-          <li><Link to="/orders">Үйлчилгээ</Link></li>
+            <ul class="dropdown">
+              <li><Link to="/soon">Бидний тухай</Link></li>
+                   <div className='dropdown-content'>
+                        <li><Link to="/about">танилцуулга</Link></li>
+                        <li><Link to="/team">Удирдлагын баг</Link></li>
+                        <li><Link to="/greeting">захирлын мэндчилгээ</Link></li>
+                    </div>
+            </ul>
+          <li><Link to="/service">Үйлчилгээ</Link></li>
           <li><Link to="/price">Хэрэгжүүлсэн төслүүд</Link></li>
-          <li><Link to="/price">Мэдээ, Мэдээлэл</Link></li>
-          <li><Link to="/price">Хүний нөөц</Link></li>
+          <li><Link to="/information">Мэдээ, Мэдээлэл</Link></li>
+          <li><Link to="/hr">Хүний нөөц</Link></li>
           <li><Link to="/price">Холбоо барих</Link></li>
         </div>
+        <div className='test'></div>
     </div>
  
     </div>

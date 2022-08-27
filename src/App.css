@@ -1,37 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+html {
+  font-family: 'Lato', sans-serif;
+}
 .navbar{
   width: 100%;
   height:64px;
-  background-color: #003659;
-  backdrop-filter: blur(10px);
+  background-color: #98AEBC;
+  ;
+
   position: fixed;
  top: 0;
  background-attachment:scroll;
  z-index: 100;
   display: flex;
+  color: #003659;
+  margin: auto;
+
 }
 .yum2{
   list-style-type: none;
   display: flex;
-  text-indent: 40px;
+  text-indent: 50px;
   text-decoration: none;
   color: white;
- 
-}
+  align-items: center;
+  width: 80%;
+  text-transform: uppercase;
 
+}
+.secondHalf{
+  width: 10%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.subSecondHalf{
+  display: block;
+  width: 80%;
+  height: 50px;
+}
 a:-webkit-any-link {
   text-decoration: none;
   color: black;
   cursor: pointer;
   color: #003659;
-  color: white;
   /* text-transform: uppercase; */
   font-size: 16px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.nameTop{
+  margin-top: -5px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color:  #003659;
+}
+.logoName{
+  font-size: 10px;
+  margin-top: -40px;
+  color: red;
+}
 .zurag2{
   width: 134px;
-  height: 48px;
+  height: 59px;
 
 }
 .half{
@@ -52,7 +84,7 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 680px;
+  height: 910px;
   margin-top: 64px;
   position: relative;
 
@@ -64,11 +96,20 @@ a:-webkit-any-link {
   background: #efefef;
   text-align: center;
 }
+.span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003659;
+  font-weight: 600;
+  position: absolute;
+  top: 22px;
+  font-size: 20px;
+  }
 .each-slide-effect  h1{
   text-shadow: 2px 10px 2px  #00000068;
   position:relative;
     box-shadow: #003659 ;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: bold  ;
     Font-size: 70px;
     Line-height: 84px;
@@ -85,9 +126,9 @@ a:-webkit-any-link {
 .threeImage{
   /* background-image: linear-gradient(to right, red , yellow); */
   width: 33.34%;
-
+  height: 1600px;
   background-size: cover;
-
+  position: relative;
 }
 .middleComp{
   height: 200px;
@@ -112,14 +153,7 @@ a:-webkit-any-link {
   height: 1px;
   background-color: red;
 }
-.span{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 20px;
-color: #003659;
-font-weight: 600;
-}
+
 .buuton{
   padding-top: 60px;
   display: flex;
@@ -142,13 +176,14 @@ font-weight: 600;
   height: 500px;
   display: flex;
   justify-content: space-between;
-
+  overflow-x: hidden;
   margin: auto;
 }
 .card{
-  width: 30%;
+  width: 440px;
   font-size: 10px;
   color:#003659;
+  
 }
 .line{
   width: 139px;
@@ -171,8 +206,8 @@ font-weight: 600;
   width: 100%;
   height: 200px;
   background-color:#98AEBC;
-
   margin: auto;
+
 }
 .footerCard{
   width: 30%;
@@ -189,8 +224,10 @@ font-weight: 600;
   font-weight: 200;
 }
 .subFooter{
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  height: 200px;
+ margin: auto;
+  background-color:#98AEBC;
   display: flex;
   justify-content: space-around;
 
@@ -201,13 +238,25 @@ font-weight: 600;
   text-indent: 20px;
 }
 .background{
-  background-image: url(https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+  background-image: url(https://s3-alpha-sig.figma.com/img/a0c1/5aed/160a47f819b9df547ca3871da4556200?Expires=1662336000&Signature=GA~HnZmK00OVlvvNQLQaRl2T4UxLUZ0dEQMcGCHFId6ku-XBJjvXBQfXJ7N9ttSVd-XYQDR45yXcapMVgJeELem6jfp50i7x1ndDMbdtdec7zMwu1BRcRlE2QfOOHVhlq24isg6Vkav9Q90YnKuZ8FlmWsGZNKCy4Z0OW~McVqqG-wpUSipbhVmkJ73xRZZ7xUyBz8GsqkejIPfDr~5diB0xBWyrXzUL0yjPrMysp1Y9JovfT0wN~~hHoeS~CpoL-FG~Qgj85IQ-UAM3HYC5bgAScD6VoUNKx4JyPwmGUHPEJ0J7W-uiUHwKIDJLfaWZzSnRu8Sw0oZgZRnUe9-z2w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
   width: 100%;
   height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+.secondImageslider{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  justify-content: center;
+}
+.secondImageslider > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 380px;
 }
 .background h1{
   width: 50%;
@@ -243,4 +292,220 @@ font-weight: 600;
 .content p {
   color: #003659;
   font-size: 25px;
+}
+.content{
+  width: 80%;
+  margin: auto;
+}
+.topLayer{
+  margin-top: 50px;
+  width: 50%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;;
+  list-style-type: none;
+}
+
+.dropdown-content {
+  display: none;
+  text-decoration: none;
+  color: #003659;
+  list-style-type: none;
+  position: absolute;
+background: rgba(255, 255, 255, 0.7);
+  width: 226px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 5px;
+}
+.dropdown-content li{
+  font-size: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.back{
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.quote{
+  font-size: 60px;
+  margin: auto;
+  padding-bottom: 50px;
+  color:#003659;
+  font-weight: 700;
+  align-items: center;
+  text-transform: uppercase;
+}
+.quote1{
+  font-size: 40px;
+  margin: auto;
+  padding-bottom: 50px;
+  color:#003659;
+  font-weight: 700;
+  align-items: center;
+  text-transform: uppercase;
+}
+.team{
+  width: 80%;
+  margin: auto; 
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.child{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+.teamMembers{
+  width: 300px;
+  margin: auto;
+}
+.nameMember{
+  width: 280px;
+  height: 404px;
+}
+.boldName{
+  color: #003659;
+  font-weight: bold;
+  font-size: 20px;
+}
+.names{
+  width: 280px;
+  text-align: center;
+  color: #003659;
+}
+.thinName{
+  color: #003659;
+  font-size: thin;
+}
+.middle{
+  margin: auto;
+}
+.line1{
+  width: 200px;
+  border: 1px solid red;
+  margin: auto;
+}
+.greetingHalf{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.halfimg{
+  width: 40%;
+}
+.greetingOther{
+  width: 60%;
+
+}
+.greetingOther h3{
+  color: #003659;
+  font-weight: 300;
+}
+.ceo{
+  width: 480px;
+  height: 500px;
+}
+.greetingOther p{
+  color: #003659;
+  font-weight: bold;
+}
+.bottomAnimated{
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.icons1{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.icons1 img{
+ height: 115px;
+}
+.service{
+  margin-top: 100px;
+  width: 80%;
+  margin: auto;
+}
+.context{
+  width: 80%;
+  margin: auto;
+}
+.appear{
+  letter-spacing: 1px;
+}
+.appear h4{
+  color: #003659;
+  font-weight: 800;
+  font-size: 20px;
+}
+.appear p{
+  color: #003659;
+  font-weight: 300;
+  font-size: 18px;
+}
+.appear span{
+  color: red;
+}
+.paragraph{
+  margin-top: 500px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.paragraph p{
+  font-size: 21px;
+  color: #003659;
+}
+.each-slide-effect1 > div {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+
+}
+.child1{
+ padding-top: 50px;
+  width: 80%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr ;
+  margin: auto;
+}
+.newsComp:nth-child(even){
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+.newsComp{
+  width: 600px;
+
+  margin-top: 20px;
+  margin: auto;
+}
+.newsComp h4{
+  color: #003659;
+  width: 560px;
+  font-size: 16px;
+}
+.hover:hover{
+  cursor: pointer;
+}
+.test{
+  width: 200px;
 }
