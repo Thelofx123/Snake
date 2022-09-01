@@ -2,8 +2,6 @@ import * as React from 'react';
 import '../App.css';
 import {Link} from "react-router-dom";
 import lbh from "../img/lbh.png"
-
-
 const Navbar = () => {
   
   return (
@@ -37,8 +35,14 @@ const Navbar = () => {
           <li><Link to="/information">Мэдээ, Мэдээлэл</Link></li>
           <li><Link to="/hr">Хүний нөөц</Link></li>
           <li><Link to="/price">Холбоо барих</Link></li>
+        
+           
+          
         </div>
-        <div className='test'></div>
+        <div className='test'>
+             <li>En</li>
+              <li>Mn</li>
+        </div>
     </div>
  
     </div>

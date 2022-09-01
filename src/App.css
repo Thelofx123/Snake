@@ -26,7 +26,16 @@ html {
   align-items: center;
   width: 80%;
   text-transform: uppercase;
-
+}
+.test{
+  list-style-type: none;
+  display: flex;
+  text-indent: 50px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  color: #003659;
+  text-transform: uppercase;
 }
 .secondHalf{
   width: 10%;
@@ -84,7 +93,7 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 910px;
+  height: 100vh;
   margin-top: 64px;
   position: relative;
 
@@ -125,10 +134,14 @@ a:-webkit-any-link {
 }
 .threeImage{
   /* background-image: linear-gradient(to right, red , yellow); */
-  width: 33.34%;
-  height: 1600px;
+  width: 100%;
   background-size: cover;
   position: relative;
+  background-position: center;
+}
+.threeclass{
+  width: 100%;
+  height: 400px;
 }
 .middleComp{
   height: 200px;
@@ -238,7 +251,7 @@ a:-webkit-any-link {
   text-indent: 20px;
 }
 .background{
-  background-image: url(https://s3-alpha-sig.figma.com/img/a0c1/5aed/160a47f819b9df547ca3871da4556200?Expires=1662336000&Signature=GA~HnZmK00OVlvvNQLQaRl2T4UxLUZ0dEQMcGCHFId6ku-XBJjvXBQfXJ7N9ttSVd-XYQDR45yXcapMVgJeELem6jfp50i7x1ndDMbdtdec7zMwu1BRcRlE2QfOOHVhlq24isg6Vkav9Q90YnKuZ8FlmWsGZNKCy4Z0OW~McVqqG-wpUSipbhVmkJ73xRZZ7xUyBz8GsqkejIPfDr~5diB0xBWyrXzUL0yjPrMysp1Y9JovfT0wN~~hHoeS~CpoL-FG~Qgj85IQ-UAM3HYC5bgAScD6VoUNKx4JyPwmGUHPEJ0J7W-uiUHwKIDJLfaWZzSnRu8Sw0oZgZRnUe9-z2w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+  background-image: url(https://images.unsplash.com/photo-1581342995886-14044cadee77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3377&q=80);
   width: 100%;
   height: 400px;
   background-attachment: fixed;
@@ -247,10 +260,12 @@ a:-webkit-any-link {
   position: relative;
 }
 .secondImageslider{
+  width: 80%;
+  height: 500px;
   display: flex;
-  align-items: center;
-  font-size: 25px;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+
 }
 .secondImageslider > div{
   display: flex;
@@ -505,7 +520,4 @@ background: rgba(255, 255, 255, 0.7);
 }
 .hover:hover{
   cursor: pointer;
-}
-.test{
-  width: 200px;
 }
