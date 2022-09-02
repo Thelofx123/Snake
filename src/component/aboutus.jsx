@@ -7,16 +7,37 @@ import Footer from './footer';
 import { getHeight } from 'react-slick/lib/utils/innerSliderUtils';
 import project from "../content/project.json"
 import Project from './projects';
+import '../style/style.css'
+import { useEffect, useState } from 'react';
 
 const Home = () => {
     news1.length=4
     project.length=3
+
+    const [index, setIndex ]= useState(0)
     const images = [
         "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
               "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
             "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
     ];
-    console.log(project)
+    const buttons = [
+        "button-secondary",
+        "button-primary"
+    ]
+    //  useEffect(() => {
+    //     setInterval(() => {
+    //         setIndex(prevVal=>{
+
+    //             console.log(prevVal,'prevVal')
+    //             let prevValACopy=prevVal;
+    //             prevValACopy=prevValACopy+1
+    //             console.log(prevValACopy,'prevValACopy')
+    //             return(
+    //                 prevValACopy
+    //             )
+    //         })
+    //     }, 2000);
+    //   }, []);
     return (
         <div>
            
@@ -36,7 +57,7 @@ const Home = () => {
            </div>
            <div className="each-slide-effect">
                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
-               <h1>VIP RESIDENCE</h1>
+               <h1>VIP RESIDENCE</h1>   
                </div>
            </div>
        
@@ -46,6 +67,7 @@ const Home = () => {
         <div className='background'> 
         <h1>КОМПАНИЙН ТУХАЙ</h1>
         </div>
+     
         <div className='aboutUs'>
             <div className='randomPic'>
                 <img src='https://s3-alpha-sig.figma.com/img/07fc/f631/ba05a3fd75cafafc3310dddfc6e869cf?Expires=1662940800&Signature=BHTeOSn0rVz-qVNtaiNvbGFq9wn2es5g5P~dGi1lJlaNgK6o2dwk0YI4mkfJ8g2HIkRLOqvztZ0dBvwZXKP9QeqdIiO3jwklHorXnmENJiGHg5pewZvAFDekTZgCXZD0ny~RyxJoL-w42wkrXsD22uijYtRL8ibMD4flJgpxzdfh~ld-WfrR~o-X~V8cqHR-hN4Vp0A9NwH2BitHFwgJVpqA67qid5MSChcAgiwv~eZ2d3lcYMEp2eDyqHLxY-~aOcX4DHsPgYJzgL4aHZD~iKUt3wGbPIGEd6vajSWeGQTWwGABAJmJU38Y-lx4i2FSjkuzOSnpG~Ni67fuR8rq6Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'></img>
@@ -74,7 +96,9 @@ const Home = () => {
             {
             news1.map( e=> <News news={e}></News>)}
             </div>
-            
+            <div className='box-D400'>
+            test
+        </div>
        
            
         </div>

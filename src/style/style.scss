@@ -1,0 +1,58 @@
+@import "colors";
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(255, 255, 255);
+
+body{
+    font: 100%, $font-stack;
+}
+$colors: (
+    B200: #0084f8,
+    B300: #fff,
+    B400: #fafafa
+    );
+@mixin transform($prop) {
+    padding: $prop - 10px;
+    border-radius: $prop;
+}
+@mixin button{
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    padding: 4px;
+    border: 1px solid black;
+}
+.button-primary{
+    @include button();
+    background-color: $primary-color;
+
+ 
+}
+.button-secondary{
+    @include button();
+    background:rgb(235, 0, 0);
+}
+.background{
+    height: 500px;
+}
+.aboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.secondImageslider{
+    width: 100%;
+    background-color: $backgorund;
+    align-items: center;
+}
+.threeImage{
+    width: 33%;
+    @include transform(5px);
+}
+@each $key,$color in $colors {
+    .box-#{$key}{
+        width: 400px;
+        height: 200px;
+        background: $color;
+    }
+}

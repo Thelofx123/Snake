@@ -22,7 +22,7 @@ const Navbar = () => {
   
     
         <div className='yum2'>
-            <ul class="dropdown">
+            <ul className="dropdown">
               <li><Link to="/soon">Бидний тухай</Link></li>
                    <div className='dropdown-content'>
                         <li><Link to="/about">танилцуулга</Link></li>

@@ -1,0 +1,64 @@
+body {
+  font: 100%, Helvetica, sans-serif;
+}
+
+.button-primary {
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  padding: 4px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.button-secondary {
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  padding: 4px;
+  border: 1px solid black;
+  background: rgb(235, 0, 0);
+}
+
+.background {
+  height: 500px;
+}
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.secondImageslider {
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+}
+
+.threeImage {
+  width: 33%;
+  padding: -5px;
+  border-radius: 5px;
+}
+
+.box-B200 {
+  width: 400px;
+  height: 200px;
+  background: #0084f8;
+}
+
+.box-B300 {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+}
+
+.box-B400 {
+  width: 400px;
+  height: 200px;
+  background: #fafafa;
+}
+
+/*# sourceMappingURL=style.css.map */
