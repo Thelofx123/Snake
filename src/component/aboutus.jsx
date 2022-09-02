@@ -24,20 +24,18 @@ const Home = () => {
         "button-secondary",
         "button-primary"
     ]
-    //  useEffect(() => {
-    //     setInterval(() => {
-    //         setIndex(prevVal=>{
-
-    //             console.log(prevVal,'prevVal')
-    //             let prevValACopy=prevVal;
-    //             prevValACopy=prevValACopy+1
-    //             console.log(prevValACopy,'prevValACopy')
-    //             return(
-    //                 prevValACopy
-    //             )
-    //         })
-    //     }, 2000);
-    //   }, []);
+     useEffect(() => {
+        setTimeout(() => {
+         
+                setIndex(prev => prev +1)
+                
+       
+            if(index===2){
+                setIndex(0)
+            }
+        }, 2000);
+      }, []);
+      console.log(index)
     return (
         <div>
            
@@ -61,7 +59,9 @@ const Home = () => {
                </div>
            </div>
        
-          
+          {
+              index === buttons.length ? <button className={buttons[index]}>testss</button> : null
+          }
        </Slide>
 
         <div className='background'> 
