@@ -24,18 +24,18 @@ const Home = () => {
         "button-secondary",
         "button-primary"
     ]
-     useEffect(() => {
-        setTimeout(() => {
+    //  useEffect(() => {
+    //     setTimeout(() => {
          
-                setIndex(prev => prev +1)
+    //             setIndex(prev => prev +1)
                 
        
-            if(index===2){
-                setIndex(0)
-            }
-        }, 2000);
-      }, []);
-      console.log(index)
+    //         if(index===2){
+    //             index=== 0;
+    //         }
+    //     }, 2000);
+    //   }, []);
+    //   console.log(index)
     return (
         <div>
            

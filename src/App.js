@@ -14,6 +14,7 @@ import Team from './component/team';
 import Footer from './component/footer';
 import Service from './component/service';
 import Hr from './component/hr';
+import ResponsiveAppBar from './component/tes';
 import Newscomp from './component/newsComp';
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
 
   return (
     <div className="main">
-      
-      <Navbar></Navbar>
+      <ResponsiveAppBar></ResponsiveAppBar>
+      {/* <Navbar></Navbar> */}
     <Routes>
           <Route path="/about" element={<Home></Home>} /> 
           <Route path="/news" element={<ViewNews></ViewNews>} /> 
