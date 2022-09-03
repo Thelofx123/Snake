@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div className="main">
-      <ResponsiveAppBar></ResponsiveAppBar>
-      {/* <Navbar></Navbar> */}
+      {/* <ResponsiveAppBar></ResponsiveAppBar> */}
+      <Navbar></Navbar>
     <Routes>
           <Route path="/about" element={<Home></Home>} /> 
           <Route path="/news" element={<ViewNews></ViewNews>} /> 

@@ -103,7 +103,7 @@ a:-webkit-any-link {
   padding: 20px;
   font-size: 20px;
   background: #efefef;
-  text-align: center;
+
 }
 .span{
   display: flex;
@@ -112,8 +112,10 @@ a:-webkit-any-link {
   color: #003659;
   font-weight: 600;
   position: absolute;
+  text-transform: uppercase;
   top: 22px;
-  font-size: 20px;
+  width: auto;
+  font-size: 1.4rem;
   }
 .each-slide-effect  h1{
   text-shadow: 2px 10px 2px  #00000068;
@@ -138,6 +140,13 @@ a:-webkit-any-link {
   background-size: cover;
   position: relative;
   background-position: center;
+}
+.threeImage span{
+  position: absolute;
+  left: 30%;
+  right: 50%;
+  width: 250px;
+  top: 10%;
 }
 .threeclass{
   width: 100%;
@@ -259,8 +268,17 @@ a:-webkit-any-link {
   background-size: cover;
   position: relative;
 }
+.background span{
+  font-size: 2.5rem;
+  position: absolute;
+
+  left: 40%;
+  margin-top: 100px;
+  font-weight: bolder;
+  right: 50%;
+}
 .secondImageslider{
-  width: 80%;
+  width: 100%;
   height: 500px;
   display: flex;
   justify-content: space-between;
@@ -272,6 +290,8 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
     height: 380px;
+    width: 33%;
+    border-radius: 2%;
 }
 .background h1{
   width: 50%;
@@ -328,11 +348,12 @@ a:-webkit-any-link {
   color: #003659;
   list-style-type: none;
   position: absolute;
-background: rgba(255, 255, 255, 0.7);
-  width: 226px;
+background: rgba(255, 255, 255, 0.74);
+  width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   padding: 5px;
+  border-radius: 4px;
 }
 .dropdown-content li{
   font-size: 10px;
@@ -367,6 +388,7 @@ background: rgba(255, 255, 255, 0.7);
   font-weight: 700;
   align-items: center;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .team{
   width: 80%;
@@ -404,6 +426,7 @@ background: rgba(255, 255, 255, 0.7);
 }
 .middle{
   margin: auto;
+  padding-bottom: 50px;
 }
 .line1{
   width: 200px;
@@ -412,11 +435,13 @@ background: rgba(255, 255, 255, 0.7);
 }
 .greetingHalf{
   width: 100%;
+  margin: auto;
   display: flex;
   margin-top: 20px;
+  justify-content: space-between;
 }
 .halfimg{
-  width: 40%;
+  width: 38%;
 }
 .greetingOther{
   width: 60%;
@@ -427,8 +452,7 @@ background: rgba(255, 255, 255, 0.7);
   font-weight: 300;
 }
 .ceo{
-  width: 480px;
-  height: 500px;
+  width: 100%;
 }
 .greetingOther p{
   color: #003659;
@@ -509,7 +533,6 @@ background: rgba(255, 255, 255, 0.7);
 }
 .newsComp{
   width: 600px;
-
   margin-top: 20px;
   margin: auto;
 }
@@ -521,3 +544,403 @@ background: rgba(255, 255, 255, 0.7);
 .hover:hover{
   cursor: pointer;
 }
+
+
+
+#App {
+  font-family: sans-serif;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+
+#page-wrap {
+  text-align: center;
+  color: white;
+  overflow: auto;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: white;
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+.bm-item a{
+  color: white;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 50px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  color: white;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+  color: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross  {
+  color: white;
+  background: #bdc3c7;
+  overflow: hidden;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 1.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.test12{
+  margin-top: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20%;
+}
+
+
+@media screen and (max-width: 1810px) {
+  .half{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 1620px) {
+  .half{
+    width: 90%;
+  }
+  .yum2{
+    text-indent: 40px;
+  }
+  .test{
+    text-indent: 30px;
+  }
+}
+@media screen and (max-width: 1515px) {
+  .half{
+    width: 90%;
+  }
+  .yum2{
+    text-indent: 30px;
+  }
+  .test{
+    text-indent: 30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .half{
+    width: 90%;
+  }
+  .yum2{
+    text-indent: 20px;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+  }
+}
+@media screen and (max-width: 1358px) {
+  .half{
+    width: 100%;
+  }
+  .yum2{
+    text-indent: 20px;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+  }
+}
+@media screen and (max-width: 1268px) {
+ 
+  .half{
+    width: 100%;
+  }
+  .yum2{
+    text-indent: 20px;
+    font-size: 1rem;
+  }
+  .aboutUs{
+    display: inline-block;
+  }
+  .randomPic{
+    width: 90%;
+  }
+  .secondImageslider{
+    width: 100%;
+  }
+  .threeImage{
+    width: 32%;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+  }
+  a:-webkit-any-link{
+    font-size: 14px
+  }
+  .zurag2{
+    width: 120px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .half{
+    width: 100%;
+  }
+  .yum2{
+    text-indent: 20px;
+    font-size: 1rem;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+  }
+  a:-webkit-any-link{
+    font-size: 14px
+  }
+  .zurag2{
+    width: 120px;
+    height: 50px;
+  }
+  .threeImage span{
+
+    position: absolute;
+    left: 30%;
+    font-size: 1rem;
+    width: 100px;
+  }
+  .secondImageslider > div{
+    height: 200px;
+  }
+  .secondImageslider{
+    height: auto;
+  }
+  .randomPic img{
+    width: 80%;
+    padding: 0%;
+  }
+  .quote{
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1101px) { 
+  .navbar{
+    display: flex;
+    width: 100%;
+  }
+  .half{
+    width: 60%;
+  }
+  .yum2{
+    display: none;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+    display: flex;
+    justify-content: end;
+  }
+  .zurag2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+  }
+  .sidebar{
+    display: block;
+  }
+  .bm-burger-button{
+    margin-top: -15px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar{
+    width: 100%;
+  }
+  .yum2{
+    display: none;
+  }
+  .test{
+    width: 100px;
+    text-indent: 20px;
+    display: flex;
+    justify-content: end;
+  }
+  .zurag2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+  }
+  .sidebar{
+    display: block;
+  }
+  .bm-burger-button{
+    margin-top: -15px;
+    width: 40px;
+  }
+  .footerCard h2{
+    font-size: 1rem;
+  }
+  .icons{
+    width: 100px;
+    text-indent: 10px;
+  }
+  .subFooter{
+    display: inline-block;
+    margin: auto;
+    height: auto;
+  }
+  .footer{
+    height: auto;
+  }
+  .footerCard{
+    width: 80%;
+    margin: auto;
+  }
+} 
+@media screen and (max-width: 747px) { 
+  .greetingHalf{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .halfimg{
+    margin: auto;
+  }
+  .ceo{
+    width: 100%;
+  }
+  .greetingOther{
+    text-align: center;
+    margin: auto;
+  }
+  .icons1{
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+ .each-slide-effect h1{
+  font-size: 2rem;
+ }
+ .background span{
+  font-size: 1.5rem;
+ }
+ .content p{
+  font-size: 20px;
+ }
+ .middleComp h1{
+  font-size: 2rem;
+  text-align: center;
+ }
+ .middleComp h2{
+  font-size: 0.8rem;
+ }
+ .randomPic img{
+  display: none;
+ }
+ .randomPic{
+  background-image: url(https://s3-alpha-sig.figma.com/img/07fc/f631/ba05a3fd75cafafc3310dddfc6e869cf?Expires=1662940800&Signature=BHTeOSn0rVz-qVNtaiNvbGFq9wn2es5g5P~dGi1lJlaNgK6o2dwk0YI4mkfJ8g2HIkRLOqvztZ0dBvwZXKP9QeqdIiO3jwklHorXnmENJiGHg5pewZvAFDekTZgCXZD0ny~RyxJoL-w42wkrXsD22uijYtRL8ibMD4flJgpxzdfh~ld-WfrR~o-X~V8cqHR-hN4Vp0A9NwH2BitHFwgJVpqA67qid5MSChcAgiwv~eZ2d3lcYMEp2eDyqHLxY-~aOcX4DHsPgYJzgL4aHZD~iKUt3wGbPIGEd6vajSWeGQTWwGABAJmJU38Y-lx4i2FSjkuzOSnpG~Ni67fuR8rq6Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ .buuton button{
+  width: 200px;
+  height: 50px;
+  font-size: 0.8rem;
+ }
+ .secondImageslider{
+  display: block;
+ }
+ .threeImage {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+ }
+ .threeImage span{
+  font-size: 0.5rem;
+  position: absolute;
+  left: 10%;
+ }
+ .card {
+  width: 80%;
+ }
+ .news{
+  display:flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: center;
+ }
+ .quote1{
+  text-align: center;
+ }
+ .dropdown-content{
+  background-color: #003659;
+  padding: 20px;
+ }
+ .dropdown-content a{
+  display: block;
+ }
+} 

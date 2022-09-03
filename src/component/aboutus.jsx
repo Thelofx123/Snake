@@ -11,7 +11,7 @@ import '../style/style.css'
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-    news1.length=4
+    news1.length=3
     project.length=3
 
     const [index, setIndex ]= useState(0)
@@ -65,7 +65,7 @@ const Home = () => {
        </Slide>
 
         <div className='background'> 
-        <h1>КОМПАНИЙН ТУХАЙ</h1>
+        <span>КОМПАНИЙН ТУХАЙ</span>
         </div>
      
         <div className='aboutUs'>
@@ -93,12 +93,11 @@ const Home = () => {
            </div>
           
             <div className='news'>
+            
             {
             news1.map( e=> <News news={e}></News>)}
             </div>
-            <div className='box-D400'>
-            test
-        </div>
+          
        
            
         </div>
