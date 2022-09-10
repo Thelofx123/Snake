@@ -7,7 +7,10 @@ const Team = () => {
 
         <div className="team">
             <h1 className='quote'>Удирдлагын баг</h1>
+            <div className='line2'></div>
+          
             <div className='child'> 
+            
             {data.map(e=>  
             <div className='teamMembers'> 
                     <img className='nameMember' src={e.image}></img>

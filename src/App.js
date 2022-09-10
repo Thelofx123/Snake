@@ -16,7 +16,11 @@ import Service from './component/service';
 import Hr from './component/hr';
 import ResponsiveAppBar from './component/tes';
 import Newscomp from './component/newsComp';
-
+import Project from './component/projects';
+import ViewProject from './component/viewProject';
+import ProjectComp from './component/projectComp';
+import { motion, AnimatePresence } from "framer-motion"
+import ScrollToTop from './component/scrollToTop';
 function App() {
 
 
@@ -25,8 +29,11 @@ function App() {
     <div className="main">
       {/* <ResponsiveAppBar></ResponsiveAppBar> */}
       <Navbar></Navbar>
-    <Routes>
-          <Route path="/about" element={<Home></Home>} /> 
+      <AnimatePresence>
+      <ScrollToTop>
+    <Routes onUpdate={() => window.scrollTo(0)}>
+            
+                 <Route path="/" element={<Home></Home>} /> 
           <Route path="/news" element={<ViewNews></ViewNews>} /> 
           <Route path="/team" element={<Team></Team>} >
           </Route>
@@ -38,7 +45,15 @@ function App() {
           </Route>
           <Route path="/information" element={<Newscomp></Newscomp>} >
           </Route>
+           <Route path="/project" element={<ViewProject></ViewProject>} >
+          </Route>
+          <Route path="/allProject" element={<ProjectComp></ProjectComp>} >
+          </Route>
+     
+ 
         </Routes>
+        </ScrollToTop>
+        </AnimatePresence>
         <Footer></Footer>
     </div>
   );

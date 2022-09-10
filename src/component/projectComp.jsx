@@ -1,31 +1,51 @@
-import data from "../content/news.json"
+import data from "../content/project.json"
 import {Link} from "react-router-dom";
-// import { useNews } from '../context/news';
+import { useProject } from '../context/project';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Container } from "@mui/material";
 
-const Newscomp = () =>{
-    // const {news1,setNews} = useNews()
+
+const ProjectComp = () =>{
+    const {project, setProject} = useProject()
     return (
-        
+        <Container maxWidth='xl'
+        // sx={{ Width: '100%',margin:'auto'}}
+        >
         <div className="bottomAnimated">
                  <div className="middle">
-            <h1 className="quote1">мэдээ, мэдээлэл</h1>
+            <h1 className="quote1">ХЭРЭГЖҮҮЛСЭН ТӨСӨЛҮҮД</h1>
             <div className='line1'></div>
             </div>
-            <div className="child1">
-                {
-                    data.map(e=> 
-                            <div className="newsComp">
-                                <div className="hover" style={{'backgroundImage': `url(${e.image[0]})`,width:"560px",height:"438px",backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat"}}></div>
-                                <Link to="/news" onClick={() => setNews(e)}> <h4>{e.name}</h4> </Link>
-                                <div className='line'></div>
-                                <p>{e.date}</p>
-                            </div>
-                        )
-                }
-            </div>
+                {data.map(e=>
+                <Link to="/project" onClick={() => setProject(e)}> 
+                        <Card sx={{ maxWidth: 700 , marginTop:'40px'}}>
+                        <CardMedia
+                        component="img"
+                        height="500"
+                        image={e.img}
+                        alt="green iguana"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="p" sx={{color:"#003659",textTransform:'uppercase'}} component="div">
+                            {e.name}
+                        </Typography>
+                        </CardContent>
+                    </Card>
+                    </Link>
+                )}
+            
+           
+
 
         </div>
+        </Container>
+        
        
     )
 }
-export default Newscomp
+export default ProjectComp

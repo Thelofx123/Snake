@@ -13,7 +13,9 @@ root.render(
     <BrowserRouter>
     <TProvider>
       <ProjectProvider>
+  
     <App />
+   
       </ProjectProvider>
     </TProvider>
     </BrowserRouter>

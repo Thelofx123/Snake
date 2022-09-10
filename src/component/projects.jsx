@@ -14,9 +14,6 @@ const Project = ({data}) =>{
                  <span className='span'>{data.name}</span>
                  </Link>
                  </div>
-  
-               
-       
     )
 }
 export default Project

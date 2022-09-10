@@ -11,7 +11,7 @@ const Greetings =() =>{
            
             <div className="greetingHalf">
                 <div className="halfimg">
-                    <img className="ceo" src="https://s3-alpha-sig.figma.com/img/c39a/4e57/666278ac8748d2a2a628f66a8f05e8ac?Expires=1662336000&Signature=cKn7xamg7vFApSZPfp9dWv556-EgD~1dRLXgpsKTYXpwFfVPYLprb1gs3dOWU5iQiUFdco23GBSCWoWz7PHSaZQ7f1hfbWxD6IIuY0fU0i2ph3-bR7NIh5Cxq-WUTpyD0NmqbvWX3QJyr347LjE6pLdmH3Ji64-tZfLdIHF8GsaFFSU6nzpNqYkR6SOLERIXvOBincCLopcnuU3~KxlYXO6RnejFozW~rJ83jhv759dpXbisskXdKhm0y2JqPXvKo2vQKUEXz1Badk-Q2lpowUKNz-UrAHCHX96uECfYUeA8Bvgg3ow12P7CoaXdvLqFtuVQyBC5bM~GaTGOre7ZCA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                    <img className="ceo" src="https://lbh.mn/wp-content/uploads/2019/04/Batsanaa-320x480.jpg"></img>
                 </div>
                 <div className="greetingOther">
              <h3> &emsp;&emsp;&emsp;&emsp;Манай компаний  зорилго нь хэрэглэгчиддээ үргэлж үнэ цэнэтэй байх баялгийг бүтээхэд оршдог билээ. Энэ зорилгодоо хүрэх зам нь хэрэглэгчээ дээдэлсэн үйлчилгээ, чанартай гүйцэтгэл, нийгэмд эерэг нөлөө үзүүлэх хүсэл эрмэлзлэлийг  манай байгууллагын бүтээлч соёл бий болгодог.<br></br>
