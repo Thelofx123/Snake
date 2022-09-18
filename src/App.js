@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from './component/navbar';
 import {
   BrowserRouter as Router,
@@ -21,18 +21,50 @@ import ViewProject from './component/viewProject';
 import ProjectComp from './component/projectComp';
 import { motion, AnimatePresence } from "framer-motion"
 import ScrollToTop from './component/scrollToTop';
-function App() {
+import Contact from './component/contactus';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#fff',
+    },
+  },
+});
+
+
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
 
   return (
-    <div className="main">
+
+    <ThemeProvider theme={theme}> 
+      
       {/* <ResponsiveAppBar></ResponsiveAppBar> */}
+      {loading ? <div className="spinner-container">
+      <div className="loading-spinner">
+      </div>
+    </div> : 
+      <div className="main">
       <Navbar></Navbar>
       <AnimatePresence>
       <ScrollToTop>
-    <Routes onUpdate={() => window.scrollTo(0)}>
+      <TransitionGroup>
+            <CSSTransition
             
+            timeout={450}
+            classNames='fade'
+            >
+    <Routes onUpdate={() => window.scrollTo(0)}>
+           
                  <Route path="/" element={<Home></Home>} /> 
           <Route path="/news" element={<ViewNews></ViewNews>} /> 
           <Route path="/team" element={<Team></Team>} >
@@ -49,13 +81,19 @@ function App() {
           </Route>
           <Route path="/allProject" element={<ProjectComp></ProjectComp>} >
           </Route>
-     
- 
+          <Route path="/contactUs" element={<Contact></Contact>} />
+       
         </Routes>
+        </CSSTransition>
+          </TransitionGroup>
         </ScrollToTop>
         </AnimatePresence>
-        <Footer></Footer>
+        <Footer></Footer> 
     </div>
+        }
+  
+    </ThemeProvider>
+ 
   );
 }
 

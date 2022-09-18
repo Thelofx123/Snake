@@ -10,7 +10,7 @@ const Navbar = () => {
   
     <div className='navbar'> 
     <div className='sidebar'>
-    <Menu pageWrapId={"page-wrap"} outerContainerId={"App"} >
+    <Menu pageWrapId={"page-wrap"} outerContainerId={"App"} burgerButtonClassName={ "my-class" }  customBurgerIcon={ <img src='https://static.thenounproject.com/png/195031-200.png' /> }>
         <ul className="dropdown">
               <a><Link to="/">Бидний тухай</Link></a>
                    <div className='dropdown-content'>
@@ -23,7 +23,7 @@ const Navbar = () => {
           <a><Link to="/allProject">Хэрэгжүүлсэн төслүүд</Link></a>
           <a><Link to="/information">Мэдээ, Мэдээлэл</Link></a>
           <a><Link to="/hr">Хүний нөөц</Link></a>
-          <a><Link to="/price">Холбоо барих</Link></a>
+          <a><Link to="/contactUs">Холбоо барих</Link></a>
   
       </Menu>
       </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
           <li><Link to="/allProject">Хэрэгжүүлсэн төслүүд</Link></li>
           <li><Link to="/information">Мэдээ, Мэдээлэл</Link></li>
           <li><Link to="/hr">Хүний нөөц</Link></li>
-          <li><Link to="/price">Холбоо барих</Link></li>
+          <li><Link to="/contactUs">Холбоо барих</Link></li>
         
             
         

@@ -6,7 +6,7 @@ const ViewProject = () =>{
     return(
        
             <div className="projectPage">
-                <div className="backOfProjects" style={{'backgroundImage': `linear-gradient(0deg, rgba(255,255,255,0.04359247116815477) 0%, rgba(255,255,255,0.7) 100%),url(${project.img})`,backgroundSize:'cover'}}>
+                <div className="backOfProjects" style={{'backgroundImage': `linear-gradient(0deg, rgba(255,255,255,0.04359247116815477) 0%, rgba(255,255,255,0.7) 100%),url(${project.img})`,backgroundSize:'cover',backgroundPosition:'center'}}>
                 <h1>{project.name}</h1> 
                 </div>
                 <div className="bottomProjectPage">

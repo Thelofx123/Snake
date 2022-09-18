@@ -14,9 +14,9 @@ const Animated = () => {
  
     const images = [
         "https://lbh.mn/wp-content/uploads/2019/04/logoNEW-320x229.png",
-              "https://lbh.mn/wp-content/uploads/2019/04/logo.png",
+              "https://lh3.googleusercontent.com/p/AF1QipMtQERL8lA_wIP-fP2fHthXywxkt16rv5HVaPzE=s1600-w400",
             "https://lbh.mn/wp-content/uploads/2019/04/logo11.png",
-            "https://lbh.mn/wp-content/uploads/2019/04/itzone-logo-bluebackground-320x115.jpg"
+            "https://scontent.fuln6-1.fna.fbcdn.net/v/t1.6435-9/84742042_807319729745228_2773886228481703936_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HfyBg1z-268AX8tQc4K&tn=2iJdmZRUEYjs8kMY&_nc_ht=scontent.fuln6-1.fna&oh=00_AT9qtaWGz8IyPlZH5ApEd5YhsGjmATK9GmwBFSBT6M-ntw&oe=634B2784"
     ];
     return(
         <div className="bottomAnimated1">

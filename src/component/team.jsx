@@ -5,9 +5,9 @@ const Team = () => {
     console.log(data)
     return (
 
-        <div className="team">
+        <div className="bottomAnimated1">
             <h1 className='quote'>Удирдлагын баг</h1>
-            <div className='line2'></div>
+            <span></span>
           
             <div className='child'> 
             

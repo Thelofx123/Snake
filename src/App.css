@@ -6,8 +6,6 @@ html {
   width: 100%;
   height:64px;
   background-color: #98AEBC;
-  ;
-
   position: fixed;
  top: 0;
  background-attachment:scroll;
@@ -178,11 +176,10 @@ a:-webkit-any-link {
 }
 
 .buuton{
-  padding-top: 60px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .buuton button {
   width: 255px;
@@ -201,11 +198,12 @@ a:-webkit-any-link {
   margin: auto;
 }
 .nuuts2{
-  width: 85%;
+  padding: 50px;
   margin: auto;
 }
 .card{
   width: 80%;
+  margin: auto;
   font-size: 10px;
   color:#003659;
   
@@ -227,8 +225,8 @@ a:-webkit-any-link {
   width: 100vh;
 }
 .imageComp{
-  width: 100%;
-  height: 300px;
+  width: 380px;
+  height: 250px;
   display: flex;
   justify-content: center;
 
@@ -269,22 +267,20 @@ a:-webkit-any-link {
   text-indent: 20px;
 }
 .background{
-  background-image: url(https://images.unsplash.com/photo-1581342995886-14044cadee77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3377&q=80);
+ 
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .background span{
   font-size: 2.5rem;
-  position: absolute;
+  color: #003659;
 
-  left: 40%;
-  margin-top: 100px;
-  font-weight: bolder;
-  right: 50%;
 }
 .secondImageslider{
   width: 100%;
@@ -310,17 +306,35 @@ a:-webkit-any-link {
     font-size: 50px;
     font-weight: 500;
 }
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
+}
 .aboutUs{
   
-  width: 100%;
-  height: 500px;
+  width: 95%;
+  height: 600px;
   display: flex;
+  margin: auto;
   align-items: center;
+  justify-content: center;
 }
 .randomPic{
   display: flex;
   align-items: center;
-  padding: 20px;
   width: 50%;
   height: 100%;
 }
@@ -336,7 +350,7 @@ a:-webkit-any-link {
   text-align: justify;
 }
 .content{
-  width: 80%;
+  width: 75%;
   margin: auto;
   justify-content: center;
   text-align: center;
@@ -434,6 +448,7 @@ background: rgba(255, 255, 255, 0.74);
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-align: center;
 }
 .team{
   width: 80%;
@@ -474,6 +489,37 @@ background: rgba(255, 255, 255, 0.74);
   margin: auto;
   padding-bottom: 50px;
 }
+.spinner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 100vh;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+.middle1{
+  margin: auto;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 80%;
+  margin: auto;
+}
 .line1{
   width: 200px;
   border: 1px solid red;
@@ -491,7 +537,32 @@ background: rgba(255, 255, 255, 0.74);
 }
 .greetingOther{
   width: 60%;
-
+}
+.grad{
+ width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gradLogos{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.gradWrapper{
+  width: 80px;
+  height: 80px;
+  background: #003659;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .greetingOther h3{
   color: #003659;
@@ -515,7 +586,7 @@ background: rgba(255, 255, 255, 0.74);
   align-items: center;
 }
 .bottomAnimated1{
-  width: 100%;
+  width: 80%;
   margin: auto;
   margin-top: 100px;
   display: flex;
@@ -776,8 +847,10 @@ background: rgba(255, 255, 255, 0.74);
     display: inline-block;
   }
   .randomPic{
-    width: 90%;
+    width: 100%;
+    height: 50vh;
   }
+
   .secondImageslider{
     width: 100%;
   }
@@ -817,8 +890,8 @@ background: rgba(255, 255, 255, 0.74);
 
     position: absolute;
     left: 30%;
-    font-size: 1rem;
-    width: 100px;
+    font-size: 2rem;
+    width: auto;
   }
   .secondImageslider > div{
     height: 200px;
@@ -827,7 +900,7 @@ background: rgba(255, 255, 255, 0.74);
     height: auto;
   }
   .randomPic img{
-    width: 80%;
+    width: 100%;
     padding: 0%;
   }
   .quote{
@@ -859,6 +932,10 @@ background: rgba(255, 255, 255, 0.74);
     display: flex;
     justify-content: end;
   }
+  .randomPic img{
+    width: 90%;
+    padding: 0%;
+  }
   .zurag2{
     display: flex;
     align-items: center;
@@ -869,9 +946,29 @@ background: rgba(255, 255, 255, 0.74);
   .sidebar{
     display: block;
   }
+  
+  .dropdown-content a{
+    margin-top: 10px;
+   }
+   .dropdown-content a{
+    display: block;
+   }
   .bm-burger-button{
     margin-top: -15px;
     width: 40px;
+  }
+  .bm-burger-button{
+    margin-top: -15px;
+    width: 40px;
+  }
+
+  
+  .my-class{
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 50px;
+    height: 60px;
   }
 }
 
@@ -898,10 +995,10 @@ background: rgba(255, 255, 255, 0.74);
   .sidebar{
     display: block;
   }
-  .bm-burger-button{
-    margin-top: -15px;
-    width: 40px;
-  }
+  .dropdown-content{
+    background-color: #003659;
+    padding: 10px;
+   }
   .footerCard h2{
     font-size: 1rem;
   }
@@ -924,6 +1021,28 @@ background: rgba(255, 255, 255, 0.74);
   .middleComp h1{
     font-size: 2rem;
   }
+  .my-class{
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 50px;
+    height: 60px;
+  }
+  .gradLogos{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grad{
+    width: 80%;
+    height: 300px;
+  }
+  .bottomAnimated1{
+    width: 100%;
+  }
+  .randomPic img{
+    width: 80%;
+    padding: 0%;
+  }
 } 
 @media screen and (max-width: 747px) { 
   .greetingHalf{
@@ -931,6 +1050,10 @@ background: rgba(255, 255, 255, 0.74);
     margin: auto;
 
     margin-top: 20px;
+  }
+  .nuuts2{
+    padding: 5px;
+    padding-bottom: 20px;
   }
   .halfimg{
     margin: auto;
@@ -953,12 +1076,27 @@ background: rgba(255, 255, 255, 0.74);
   .zurag3{
     width: 100%;
   }
+  .my-class{
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 50px;
+    height: 60px;
+  }
 }
 @media screen and (max-width: 700px) {
   .child{
     margin-top: 50px;
     display: flex;
+    
     flex-direction: column;
+  }
+  .my-class{
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 50px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -975,7 +1113,8 @@ background: rgba(255, 255, 255, 0.74);
   font-size: 1.4rem;
  }
  .content p{
-  font-size: 20px;
+  font-size: 16px;
+  margin-top: 20px;
   text-emphasis-position:initial;
   text-align: justify;
  }
@@ -994,11 +1133,36 @@ background: rgba(255, 255, 255, 0.74);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 50%;
+  margin: auto;
+  width: 89.2vw;
+}
+.zurag2{
+  width: 85px;
+  height:35px;
+}
+.middleComp{
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 150px;
+}
+.my-class{
+  position: absolute;
+  top: 27%;
+  left: 2%;
+  width: 50px;
+  height: 60px;
+}
+.test li{
+  font-size: 14px;
 }
  .buuton button{
   width: 150px;
   height: 40px;
   font-size: 0.6rem;
+ }
+ .half{
+  width: 70%;
  }
  .secondImageslider{
   display: block;
@@ -1024,6 +1188,9 @@ background: rgba(255, 255, 255, 0.74);
   width: 100%;
   height: auto;
 }
+.card h1{
+  font-size: 1rem;
+}
  .quote1{
   font-size: 1.5rem;
   text-align: center;
@@ -1040,7 +1207,8 @@ background: rgba(255, 255, 255, 0.74);
  }
  .dropdown-content a{
   display: block;
- }.backOfProjects h1{
+ }
+ .backOfProjects h1{
   font-size: 1.5rem;
  }
 

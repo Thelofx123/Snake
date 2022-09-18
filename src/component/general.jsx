@@ -3,7 +3,7 @@ import Animated from "./strat"
 
 const Greetings =() =>{
     return(
-        <div className="back">
+        <div className="bottomAnimated1">
             <div className="middle">
             <h1 className="quote">Захирлын мэндчилгээ</h1>
             <div className='line1'></div>

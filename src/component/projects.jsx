@@ -8,7 +8,7 @@ const Project = ({data}) =>{
     
     return(
       
-          <div  className='threeImage' style={{ 'backgroundImage': `linear-gradient(0deg, rgba(255,255,255,0.04359247116815477) 0%, rgba(255,255,255,0.7) 100%),url(${data.img})` }}>
+          <div  className='threeImage' style={{ 'backgroundImage': `linear-gradient(0deg, rgba(255,255,255,0.01359247116815477) 0%, rgba(255,255,255,0.3) 100%),url(${data.img})` }}>
               {/* <img  src={`${data.img}`} ></img> */}
                  <Link to="/project" onClick={() => setProject(data)}>
                  <span className='span'>{data.name}</span>

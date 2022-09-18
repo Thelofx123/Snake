@@ -11,6 +11,10 @@ import { Link } from 'react-router-dom';
 import '../style/style.css'
 import { useEffect, useState } from 'react';
 import { motion, useScroll, Variants  } from "framer-motion";
+import vip from '../img/vip.jpg'
+import buddha from '../img/buddha.jpg'
+import bella from '../img/bella.jpg'
+import meme from '../img/meme.jpg'
 
 const Home = () => {
    
@@ -40,9 +44,9 @@ const Home = () => {
 
     const [index, setIndex ]= useState(0)
     const images = [
-        "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
-              "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
-            "https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+        vip,
+        buddha,
+        bella
     ];
     const buttons = [
         "button-secondary",
@@ -57,6 +61,14 @@ const Home = () => {
         arrows: false
         
       };
+      const zoomOutProperties1 = {
+        duration: 1000000,
+        transitionDuration: 800,
+        infinite: true,
+        scale: 0.4,
+        arrows: true
+        
+      };
       const responsiveSettings = [
        
         {
@@ -67,9 +79,9 @@ const Home = () => {
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 900,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
@@ -110,35 +122,35 @@ const Home = () => {
         viewport={{once:false, }}
         transition={{staggerChildren:1}}>
            
-            <Slide>
+            <Fade {...zoomOutProperties1}>
            
            <div className="each-slide-effect">
-               <div style={{ 'backgroundImage': `url(${images[0]})` }}>
+               <div style={{ 'backgroundImage': `url(${images[0]})`,backgroundSize:'cover',backgroundPosition:'center' }}>
                <motion.h1 >VIP RESIDENCE</motion.h1>
                </div>
            </div>
            <div className="each-slide-effect">
-               <div style={{ 'backgroundImage': `url(${images[1]})` }}>
+               <div style={{ 'backgroundImage': `url(${images[1]})`,backgroundSize:'cover',backgroundPosition:'center' }}>
               
-               <motion.h1 >VIP RESIDENCE</motion.h1>
+               <motion.h1 >BUDDHA VISTA</motion.h1>
                </div>
            
            </div>
            <div className="each-slide-effect">
-               <div style={{ 'backgroundImage': `url(${images[2]})` }}>
-               <motion.h1 >VIP RESIDENCE</motion.h1> 
+               <div style={{ 'backgroundImage': `url(${images[2]})`,backgroundSize:'cover',backgroundPosition:'center' }}>
+               <motion.h1 >BELLA VISTA</motion.h1> 
                </div>
            </div>
        
           {
               index === buttons.length ? <button className={buttons[index]}>testss</button> : null
           }
-       </Slide>
+       </Fade>
 
-        <div className='background'> 
-        <motion.span >КОМПАНИЙН ТУХАЙ</motion.span>
+    
+        <div className='middleComp'><h1>КОМПАНИЙН ТУХАЙ</h1><span></span></div>
      
-        </div>
+  
      
         <div className='aboutUs'>
             <div className='randomPic'>
